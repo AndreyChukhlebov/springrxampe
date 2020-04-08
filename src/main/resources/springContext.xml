@@ -3,5 +3,15 @@
         "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
 <beans>
-    <bean id="packageServiceCleaner" class="brans.impl.MyBeanImpl"/>
+
+    <bean id="jdbcTemplate" class="brans.impl.JdbcTemplateImpl">
+        <property name="name" value="wsv[WEFWE"/>
+        <property name="url" value="wsv[WEWE"/>
+        <property name="qwert" value="EWQEWFQ[oae"/>
+    </bean>
+
+    <bean id="branchAdminService" class="brans.impl.UserDaoImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
 </beans>
